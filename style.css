@@ -1,0 +1,87 @@
+body {
+  font-family: "Times New Roman", sans-serif;
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#header {
+  box-shadow: 0 10px 20px 1px #0000001a;
+}
+#header .container {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+}
+#header .container .menu {
+  margin-left: 200px;
+  display: flex;
+  align-items: center;
+}
+#header .container .menu-item {
+  margin: 0 30px;
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+  border-bottom: 1px solid transparent;
+}
+#header .container .menu-item.active {
+  border-bottom: 1px solid black;
+  color: black;
+  font-weight: bold;
+}
+#header .container .menu-item:hover {
+  border-bottom: 1px solid black;
+  color: black;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+.logo-letter {
+  color: rgba(225, 82, 10, 0.928);
+  font-size: 50px;
+  line-height: 42px;
+}
+.logo-text {
+  font-size: 30px;
+  line-height: 30px;
+  color: black;
+  margin-left: 5px;
+}
+
+#products .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.product {
+  width: 250px;
+  height: 250px;
+  box-shadow: 0 10px 20px 1px #0000001a;
+  margin: 25px 0;
+  text-align: center;
+}
+.product-image {
+  background: rgba(213, 133, 92, 0.928);
+  height: 120px;
+}
+.product-title {
+  margin-top: 20px;
+  font-size: 20px;
+}
+.product-text {
+  margin-top: 20px;
+  font-size: 18px;
+  color: black;
+}
+
+/*# sourceMappingURL=style.css.map */

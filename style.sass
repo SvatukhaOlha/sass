@@ -1,0 +1,63 @@
+@import "vars"
+body 
+    font-family: "Times New Roman", sans-serif
+    margin: 0
+.container 
+    max-width: 1200px
+    margin: 0 auto
+#header 
+    box-shadow: 0 10px 20px 1px #0000001a
+    .container 
+        padding: 20px 0
+        display: flex
+        align-items: center
+        .menu
+            margin-left: 200px
+            display: flex
+            align-items: center
+            &-item 
+                margin: 0 30px
+                font-size: 18px
+                text-decoration: none
+                color: $color_primarly
+                border-bottom: 1px solid transparent
+                &.active
+                    border-bottom: $border_bottom
+                    color: $color_primarly
+                    font-weight: bold
+                &:hover
+                    border-bottom: $border_bottom
+                    color: $color_primarly
+.logo 
+    display: flex
+    align-items: center
+    font-weight: bold
+    &-letter 
+        color: $logo_letter
+        font-size: 50px
+        line-height: 42px  
+    &-text 
+        font-size: 30px
+        line-height: 30px
+        color: black
+        margin-left: 5px                     
+#products
+    .container 
+        display: flex
+        justify-content: space-between
+        align-items: center
+        flex-wrap: wrap
+        margin-top: 50px
+.product
+    @include box
+    &-image
+        background: $product_image
+        height: 120px
+    &-title
+        margin-top: 20px
+        font-size: 20px
+    &-text
+        margin-top: 20px
+        font-size: 18px
+        color: $color_primarly
+    
